@@ -1,0 +1,281 @@
+$main-width: 1100px;
+$regular: 'LatoWeb';
+$bold: 'LatoWebBold';
+$light: 'LatoWebLight';
+$semibold: 'LatoWebSemibold';
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+} 
+
+button, input, textarea, select {
+    border: none;
+    outline: none;
+}
+
+
+html,
+body {
+  // height: 100%;
+  // font-family:"PTSansRegular";
+  background: url("../images/bg.png");
+
+  // background: skyblue;
+}
+body {
+	box-sizing:border-box;
+	background: url(../images/bodybg.jpg) center 100px repeat;
+}
+
+.wrapper {
+	position:relative;
+	min-height:100%;
+	height:auto!important;
+	overflow:hidden;
+	background:#F1EFEA;
+	background: url("../images/bg.png");
+}
+.page-header {
+	
+ 	background: #fff;
+ 	@extend %clearfix;
+ 	
+
+}
+.header-wrap {
+	height: 100px;
+	width: 1200px;
+	margin: 0 auto;
+	@extend %clearfix;
+	position: relative;
+	background:#1F848E;
+	&:after {
+    content: '';
+    position: absolute;
+    background: url(../images/center-shadow.png) repeat-x;
+    width: 100%;
+    height: 14px;
+    left: 0;
+    bottom: -14px;
+    z-index: 1;
+}
+}
+.catalog-title {
+	float: left;
+	margin: 0 ;
+    width: 170px;
+    height: 32px;
+    line-height: 32px;
+    background: #34495e;
+    border: 1px solid #354b60;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.14);
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+  
+    text-align: center;
+ 
+    
+}
+.logo-wrap {
+	@extend %clearfix;
+}
+.slider {
+	height: 360px;
+	background:#fff;
+	background-image: url("../images/conductor.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.main-nav {
+	background:#34495E;
+	height: 52px;
+
+	@extend %clearfix;
+	
+
+	&__list {
+			width: 1200px;
+		margin: 0 auto;
+
+	}
+	&__list-item {
+		float:left;
+		list-style: none;
+		margin: 0 10px 0 0;
+		padding: 0 5px;
+	
+
+	}
+	&__list-link {
+	display: block;
+	color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 52px;
+
+	&:hover {
+		background:#3C556E;
+	}
+
+	}
+}
+
+.search-wrap {
+	width: 300px;
+	// background:#e3e;
+	margin: 0 0 0 180px;
+	
+	&__form {
+		// margin: 10px 0 0;
+
+	}
+	&__input {
+    height: 25px;
+    font: normal 16px/100% 'PTSansNarrow', sans-serif;
+    color: #8d8d8d;
+    padding-left: 12px;
+    border-bottom: 1px solid #aadbdb;
+    border-left: 1px solid #43afaf;
+    line-height: 25px;
+	}
+	&__button {
+		    width: 40px;
+    height: 28px;
+    background: #dcdcdc;
+    position: relative;
+    padding: 0;
+    margin: 0 0 0 -4px;
+	}
+
+}
+.contacts-wrap {
+	@extend %clearfix;
+	margin: 0 0 0 310px;
+	padding: 10px 0;
+
+	&__tel {
+		color: #fff;
+		font-size: 19px;
+    	font-weight: bold;
+    	text-shadow: 0 3px 6px rgba(1, 1, 1, 0.3);
+    	&:first-child {
+    		margin: 0 20px 0 0;
+    	}
+	}
+	&__addr {
+		float: right;
+		color: #fff;
+		font-size: 16px;
+    	text-shadow: 0 3px 6px rgba(1, 1, 1, 0.3);
+    	border-bottom: 1px dotted white;
+
+	}
+}
+.content {
+	@extend %clearfix;
+}
+.content-wrap {
+	width: 1200px;
+	margin: 0 auto;
+	
+}
+.sidebar {
+	width: 33%;
+	float: left;
+	border-bottom: 2px solid #bfcad2;
+	background:#fff;
+	position: relative;
+	&:before {
+		content: '';
+	    position: absolute;
+	    background: url(../images/main-block-shadow.png) no-repeat;
+	    width: 100%;
+	    height: 16px;
+	    bottom: -16px;
+	    left: 0;
+	}
+}
+.sidebar-heading {
+	font-size: 1em;
+	padding: 20px;
+	margin: 0;
+	border-bottom: 1px solid #bfcad2;
+	border-top: 1px solid #bfcad2;
+	&:first-child {
+		border-top: none;
+	}
+}
+.sidebar-menu {
+	padding: 0;
+	margin: 10px 0;
+	&__item {
+		list-style: none;
+		margin: 0 0 0 40px;
+		padding: 5px;
+	}
+	&__link {
+		color: #287fb8;
+		text-decoration: none;
+	}
+}
+
+.right-col {
+	width: 66%;
+	margin:0 0 0 34%;
+	&__section {
+		background:#fff;
+		margin: 0 0 30px 0;
+		position: relative;
+			&:last-child {
+				margin: 0 0 40px 0;
+			}
+			&:before {
+		content: '';
+	    position: absolute;
+	    background: url(../images/main-block-shadow.png) no-repeat;
+	    width: 100%;
+	    height: 16px;
+	    bottom: -16px;
+	    left: 0;
+	}
+	}
+	
+	&__section-header {
+		padding: 20px;
+		border-bottom: 1px solid #bfcad2;
+	}
+	&__section-h1 {
+		padding: 0;
+		margin: 0;
+		font-size: 1em;
+	}
+	&__p {
+		padding: 20px;
+		margin: 0;
+	}
+}
+
+.page-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 80px;
+  background: #bbb;
+  margin: 80px 0 0 0;
+  @extend %clearfix;
+}
+
+
+
+
+

@@ -1,0 +1,198 @@
+.page-header:after, .header-wrap:after, .logo-wrap:after, .main-nav:after, .contacts-wrap:after, .content:after, .page-footer:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+button, input, textarea, select {
+  border: none;
+  outline: none; }
+
+html,
+body {
+  background: url("../images/bg.png"); }
+
+body {
+  box-sizing: border-box;
+  background: url(../images/bodybg.jpg) center 100px repeat; }
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  height: auto !important;
+  overflow: hidden;
+  background: #F1EFEA;
+  background: url("../images/bg.png"); }
+
+.page-header {
+  background: #fff; }
+
+.header-wrap {
+  height: 100px;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  background: #1F848E; }
+  .header-wrap:after {
+    content: '';
+    position: absolute;
+    background: url(../images/center-shadow.png) repeat-x;
+    width: 100%;
+    height: 14px;
+    left: 0;
+    bottom: -14px;
+    z-index: 1; }
+
+.catalog-title {
+  float: left;
+  margin: 0;
+  width: 170px;
+  height: 32px;
+  line-height: 32px;
+  background: #34495e;
+  border: 1px solid #354b60;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.14);
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center; }
+
+.slider {
+  height: 360px;
+  background: #fff;
+  background-image: url("../images/conductor.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.main-nav {
+  background: #34495E;
+  height: 52px; }
+  .main-nav__list {
+    width: 1200px;
+    margin: 0 auto; }
+  .main-nav__list-item {
+    float: left;
+    list-style: none;
+    margin: 0 10px 0 0;
+    padding: 0 5px; }
+  .main-nav__list-link {
+    display: block;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 52px; }
+    .main-nav__list-link:hover {
+      background: #3C556E; }
+
+.search-wrap {
+  width: 300px;
+  margin: 0 0 0 180px; }
+  .search-wrap__input {
+    height: 25px;
+    font: normal 16px/100% 'PTSansNarrow', sans-serif;
+    color: #8d8d8d;
+    padding-left: 12px;
+    border-bottom: 1px solid #aadbdb;
+    border-left: 1px solid #43afaf;
+    line-height: 25px; }
+  .search-wrap__button {
+    width: 40px;
+    height: 28px;
+    background: #dcdcdc;
+    position: relative;
+    padding: 0;
+    margin: 0 0 0 -4px; }
+
+.contacts-wrap {
+  margin: 0 0 0 310px;
+  padding: 10px 0; }
+  .contacts-wrap__tel {
+    color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+    text-shadow: 0 3px 6px rgba(1, 1, 1, 0.3); }
+    .contacts-wrap__tel:first-child {
+      margin: 0 20px 0 0; }
+  .contacts-wrap__addr {
+    float: right;
+    color: #fff;
+    font-size: 16px;
+    text-shadow: 0 3px 6px rgba(1, 1, 1, 0.3);
+    border-bottom: 1px dotted white; }
+
+.content-wrap {
+  width: 1200px;
+  margin: 0 auto; }
+
+.sidebar {
+  width: 33%;
+  float: left;
+  border-bottom: 2px solid #bfcad2;
+  background: #fff;
+  position: relative; }
+  .sidebar:before {
+    content: '';
+    position: absolute;
+    background: url(../images/main-block-shadow.png) no-repeat;
+    width: 100%;
+    height: 16px;
+    bottom: -16px;
+    left: 0; }
+
+.sidebar-heading {
+  font-size: 1em;
+  padding: 20px;
+  margin: 0;
+  border-bottom: 1px solid #bfcad2;
+  border-top: 1px solid #bfcad2; }
+  .sidebar-heading:first-child {
+    border-top: none; }
+
+.sidebar-menu {
+  padding: 0;
+  margin: 10px 0; }
+  .sidebar-menu__item {
+    list-style: none;
+    margin: 0 0 0 40px;
+    padding: 5px; }
+  .sidebar-menu__link {
+    color: #287fb8;
+    text-decoration: none; }
+
+.right-col {
+  width: 66%;
+  margin: 0 0 0 34%; }
+  .right-col__section {
+    background: #fff;
+    margin: 0 0 30px 0;
+    position: relative; }
+    .right-col__section:last-child {
+      margin: 0 0 40px 0; }
+    .right-col__section:before {
+      content: '';
+      position: absolute;
+      background: url(../images/main-block-shadow.png) no-repeat;
+      width: 100%;
+      height: 16px;
+      bottom: -16px;
+      left: 0; }
+  .right-col__section-header {
+    padding: 20px;
+    border-bottom: 1px solid #bfcad2; }
+  .right-col__section-h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 1em; }
+  .right-col__p {
+    padding: 20px;
+    margin: 0; }
+
+.page-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 80px;
+  background: #bbb;
+  margin: 80px 0 0 0; }
